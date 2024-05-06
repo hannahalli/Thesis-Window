@@ -1412,6 +1412,24 @@ if (reversed == null) { reversed = false; }
 				this.removeEventListener('tick', movieClip_3_FadeInCbk);
 			}
 		}
+		function doSomething() {
+			_this.gotoAndPlay('1');
+			// Put your code here that you want to execute after waiting
+		}
+		
+		// Function to calculate milliseconds for given hours
+		function hoursToMilliseconds(hours) {
+			return hours * 60 * 60 * 1000; // Convert hours to milliseconds
+		}
+		
+		// Number of hours to wait
+		var hoursToWait = 4;
+		
+		// Convert hours to milliseconds
+		var millisecondsToWait = hoursToMilliseconds(hoursToWait);
+		
+		// Call setTimeout to wait for the specified number of milliseconds
+		setTimeout(doSomething, millisecondsToWait);
 	}
 
 	// actions tween:

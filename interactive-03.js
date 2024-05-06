@@ -12416,10 +12416,7 @@ if (reversed == null) { reversed = false; }
 		var _this = this;
 		
 		// Set a timeout function to run after 5 seconds
-		setTimeout(function() {
-		    // Make the specified object invisible after 5 seconds
-		    _this.movieClip_38.visible = false;
-		}, 5000); // 5000 milliseconds = 5 seconds
+
 		var _this = this;
 		/*
 		
